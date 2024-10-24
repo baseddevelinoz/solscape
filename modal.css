@@ -1,0 +1,89 @@
+/* MODAL STYLES
+-------------------------------*/
+.jw-modal {
+  /* modals are hidden by default */
+  display: none;
+
+  /* modal container fixed across whole screen */
+  position: fixed;
+  inset: 0;
+
+  /* z-index must be higher than everything else on the page */
+  z-index: 10000;
+
+  /* semi-transparent black background exposed by padding */
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+
+  /* enables scrolling for tall modals */
+  overflow: auto;
+}
+
+.jw-modal.open {
+  display: block;
+}
+
+.jw-modal-body {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+  background: url("img/maincontainer.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  color: black;
+}
+
+#modal-title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Q_A {
+  background: url("img/widecontainer.png") no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+}
+
+.modal-question {
+  color: rgb(253, 202, 0);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.modal-answer {
+  max-width: 100%;
+  color: white;
+  font-size: 24px;
+}
+
+#Q_A_1,
+#Q_A_2 {
+  padding: 120px;
+}
+
+#Q_A_3 {
+  padding: 50px;
+}
+
+#Q_A_4 {
+  padding: 80px;
+}
+
+#Q_A_5 {
+  padding: 80px;
+}
+
+#closeModal {
+  width: 130px;
+  height: 90px;
+}
+
+#closeModal:hover {
+  color: rgb(176, 215, 247);
+}
+
+#closeModal:active:focus {
+  padding-top: 35px;
+  padding-left: 35px;
+}

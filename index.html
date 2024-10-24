@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  
+
+<
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <title>SolScape</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="terminal.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/css/select2.min.html"
+      rel="stylesheet"
+    />
+    <!-- Reference to the site manifest -->
+    <link rel="manifest" href="icons/site.webmanifest" />
+    <!-- Standard favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+
+    <!-- Apple Touch Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+
+    <!-- Android Touch Icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="icons/android-chrome-192x192.png"
+    />
+
+    <!-- Favicon for old browsers -->
+    <link rel="shortcut icon" href="icons/favicon.ico" />
+
+    <!-- Site preview stuff-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SolScape" />
+    <meta property="og:description" content="Fight for $GOLD!" />
+    <meta property="og:image" content="img/navbar.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SolScape" />
+    <meta name="twitter:description" content="Fight for $GOLD!" />
+    <meta property="twitter:image" content="img/navbar.png" />
+  </head>
+  <body>
+    <img src="img/background.png" id="body-bg" alt="SolScape background" />
+    <div id="container">
+      <header>
+        <img src="img/navbar.png" id="navbar-bg" alt="SolScape navbar" />
+        <nav>
+          <button class="button nav-button">
+            <a href="https://t.me/SolScapeonline" class="button-link">Chat</a>
+          </button>
+          <button class="button nav-button">
+            <a href="https://twitter.com/SolScapeonline" class="button-link"
+              >Twitter</a
+            >
+          </button>
+          <button class="button nav-button" onclick="openModal('modal-1')">
+            <span class="button-link">FAQ</span>
+          </button>
+          <button class="button nav-button warning">
+            <a href="https://duel.moonscape.so/" class="button-link"
+              ><span class="button-link button-red">PLAY</span></a
+            >
+          </button>
+        </nav>
+      </header>
+      <main>
+        <section class="section-container">
+          <h2 class="section-title">Why ?</h2>
+          <p class="section-text">
+            <i>"Holy fock, there's no PvP game on Solana!"</i> ---&gt; So we
+            built one.
+          </p>
+        </section>
+        <section class="section-container">
+          <h2 class="section-title">What ?</h2>
+          <p class="section-text">
+            With SolScape, we are bringing back the equalized 1v1 PvP mode of
+            OSRS. Winner takes it all and loser kicks rocks.
+          </p>
+        </section>
+        <div class="section-double">
+          <section class="section-container">
+            <h2 class="section-title">Who ?</h2>
+            <p class="section-text">
+              Four bozos, see<br />
+              below
+            </p>
+            <button class="button section-button">
+              <a
+                href="https://docs.google.com/document/d/1uSVkL8KAg76-S5_mhacwwO3NJCOzCxTL_TwaRgPJdSc/pub"
+                class="button-link"
+                >Laugh at devs</a
+              >
+            </button>
+          </section>
+          <section class="section-container-square">
+            <div id="integrated-terminal">
+              <button id="getPhantomBtn">
+                <a href="https://phantom.app/">Get Phantom</a>
+              </button>
+              <button id="connectBtn"><span>Connect Wallet</span></button>
+              <div id="swapSection">
+                <div id="swapInterface">
+                  <div id="misc">
+                    <div id="miscLeft">
+                      <img id="swapLogo" alt="loading..." /><span
+                        id="swapName"
+                      ></span>
+                    </div>
+                    <div id="miscRight">
+                      <button id="halfBtn">1/2</button
+                      ><button id="maxBtn">MAX</button>
+                      <div id="slippageInputWrapper">
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 10"
+                          fill="inherit"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4.67559 1.39922C4.18425 1.39922 3.78594 1.79753 3.78594 2.28887C3.78594 2.78022 4.18425 3.17853 4.67559 3.17853C5.16694 3.17853 5.56525 2.78022 5.56525 2.28887C5.56525 1.79753 5.16694 1.39922 4.67559 1.39922ZM1.19961 2.88867H2.67329C2.93107 3.75043 3.72998 4.37853 4.67559 4.37853C5.62121 4.37853 6.42012 3.75043 6.67789 2.88867H10.7996C11.131 2.88867 11.3996 2.62004 11.3996 2.28867C11.3996 1.9573 11.131 1.68867 10.7996 1.68867H6.67777C6.41987 0.827121 5.62106 0.199219 4.67559 0.199219C3.73013 0.199219 2.93132 0.827121 2.67342 1.68867H1.19961C0.868239 1.68867 0.599609 1.9573 0.599609 2.28867C0.599609 2.62004 0.868239 2.88867 1.19961 2.88867ZM0.599609 7.58555C0.599609 7.25418 0.868239 6.98555 1.19961 6.98555H5.98367C6.24157 6.124 7.04038 5.49609 7.98585 5.49609C8.93131 5.49609 9.73012 6.124 9.98802 6.98555H10.7995C11.1309 6.98555 11.3995 7.25418 11.3995 7.58555C11.3995 7.91692 11.1309 8.18555 10.7995 8.18555H9.98814C9.73037 9.04731 8.93146 9.6754 7.98585 9.6754C7.04023 9.6754 6.24132 9.04731 5.98355 8.18555H1.19961C0.868239 8.18555 0.599609 7.91692 0.599609 7.58555ZM7.09619 7.58575C7.09619 7.09441 7.4945 6.69609 7.98585 6.69609C8.47719 6.69609 8.8755 7.09441 8.8755 7.58575C8.8755 8.07709 8.47719 8.4754 7.98585 8.4754C7.4945 8.4754 7.09619 8.07709 7.09619 7.58575Z"
+                            fill="inherit"
+                            fill-opacity="0.5"
+                          ></path>
+                        </svg>
+                        <input
+                          id="slippageInput"
+                          type="number"
+                          min="0"
+                          max="99.99"
+                        /><span>%</span>
+                        <span class="slippage-tooltip">Slippage</span>
+                      </div>
+                      <button id="disconnectBtn">Disconnect!</button>
+                      <div id="walletAddressWrapper">
+                        <img
+                          id="walletLogo"
+                          src="cdn-icons-png.freepik.com/512/3757/3757881.html"
+                          alt="no"
+                        /><span id="walletAddressSpan">walletAddress</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tokenField animation-up" id="tokenInField">
+                    <div class="tokenFieldTop">
+                      <select class="tokenMenu select2" id="tokenInMenu" />
+                      <input
+                        id="tokenInInput"
+                        class="tokenInput"
+                        type="number"
+                        value="0"
+                        min="0"
+                      />
+                    </div>
+                    <div class="tokenFieldBottom">
+                      <div class="tokenFieldBottomLeft">
+                        <svg
+                          width="11"
+                          height="11"
+                          viewBox="0 0 32 32"
+                          fill="inherit"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M25.1425 8.45597H5.22047L5.22025 8.45592C4.66944 8.40838 4.15821 8.1496 3.79392 7.73368C3.52351 7.52371 3.34106 7.22064 3.28188 6.88329C3.24718 5.65089 4.6625 4.79883 5.9425 4.79883H22.3996C23.1264 4.80107 23.8229 5.09067 24.3368 5.60455C24.8507 6.11843 25.1403 6.81496 25.1425 7.54168V8.45597ZM26.0564 10.2846H5.02779C4.54289 10.2846 4.07777 10.092 3.73473 9.74912C3.39187 9.40605 3.19922 8.94094 3.19922 8.45605V25.8275C3.19922 26.555 3.4882 27.2526 4.00248 27.7671C4.51698 28.2814 5.21451 28.5703 5.94208 28.5703H26.0564C26.7839 28.5703 27.4814 28.2814 27.996 27.7671C28.5102 27.2526 28.7992 26.555 28.7992 25.8275V23.0846H24.2278C22.9213 23.0846 21.7139 22.3875 21.0607 21.2561C20.4074 20.1246 20.4074 18.7303 21.0607 17.5989C21.7139 16.4675 22.9213 15.7703 24.2278 15.7703H28.7992V13.0275C28.7992 12.2999 28.5102 11.6024 27.996 11.0879C27.4815 10.5736 26.7839 10.2846 26.0564 10.2846ZM22.4014 19.4277C22.4014 19.9126 22.594 20.3777 22.9369 20.7208C23.2799 21.0636 23.7451 21.2563 24.2299 21.2563H28.8014V17.5991H24.2299C23.745 17.5991 23.2799 17.7918 22.9369 18.1346C22.594 18.4777 22.4014 18.9428 22.4014 19.4277Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                        <span class="tokenBalanceSpan" id="tokenInBalanceSpan"
+                          >loading...</span
+                        >
+                        <span
+                          class="tokenBalanceSymbolSpan"
+                          id="tokenInBalanceSymbolSpan"
+                        ></span>
+                      </div>
+                      <div class="tokenFieldBottomRight">
+                        <span>$</span><span id="tokenInValueSpan">0</span>
+                      </div>
+                    </div>
+                  </div>
+                  <button id="swapTokensBtn"><span>⇅</span></button>
+                  <div class="tokenField animation-down" id="tokenOutField">
+                    <div class="tokenFieldTop">
+                      <select class="tokenMenu select2" id="tokenOutMenu" />
+                      <input
+                        id="tokenOutInput"
+                        class="tokenInput"
+                        type="number"
+                        readonly
+                        value="0"
+                        min="0"
+                      />
+                    </div>
+                    <div class="tokenFieldBottom">
+                      <div class="tokenFieldBottomLeft">
+                        <svg
+                          width="11"
+                          height="11"
+                          viewBox="0 0 32 32"
+                          fill="inherit"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M25.1425 8.45597H5.22047L5.22025 8.45592C4.66944 8.40838 4.15821 8.1496 3.79392 7.73368C3.52351 7.52371 3.34106 7.22064 3.28188 6.88329C3.24718 5.65089 4.6625 4.79883 5.9425 4.79883H22.3996C23.1264 4.80107 23.8229 5.09067 24.3368 5.60455C24.8507 6.11843 25.1403 6.81496 25.1425 7.54168V8.45597ZM26.0564 10.2846H5.02779C4.54289 10.2846 4.07777 10.092 3.73473 9.74912C3.39187 9.40605 3.19922 8.94094 3.19922 8.45605V25.8275C3.19922 26.555 3.4882 27.2526 4.00248 27.7671C4.51698 28.2814 5.21451 28.5703 5.94208 28.5703H26.0564C26.7839 28.5703 27.4814 28.2814 27.996 27.7671C28.5102 27.2526 28.7992 26.555 28.7992 25.8275V23.0846H24.2278C22.9213 23.0846 21.7139 22.3875 21.0607 21.2561C20.4074 20.1246 20.4074 18.7303 21.0607 17.5989C21.7139 16.4675 22.9213 15.7703 24.2278 15.7703H28.7992V13.0275C28.7992 12.2999 28.5102 11.6024 27.996 11.0879C27.4815 10.5736 26.7839 10.2846 26.0564 10.2846ZM22.4014 19.4277C22.4014 19.9126 22.594 20.3777 22.9369 20.7208C23.2799 21.0636 23.7451 21.2563 24.2299 21.2563H28.8014V17.5991H24.2299C23.745 17.5991 23.2799 17.7918 22.9369 18.1346C22.594 18.4777 22.4014 18.9428 22.4014 19.4277Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                        <span class="tokenBalanceSpan" id="tokenOutBalanceSpan"
+                          >loading...</span
+                        >
+                        <span
+                          class="tokenBalanceSymbolSpan"
+                          id="tokenOutBalanceSymbolSpan"
+                        ></span>
+                      </div>
+                      <div class="tokenFieldBottomRight">
+                        <span>$</span><span id="tokenOutValueSpan">0</span>
+                      </div>
+                    </div>
+                  </div>
+                  <button id="swapBtn"><span>Swap</span></button>
+                </div>
+                <div id="txDetailsField">
+                  <span id="tokenRateSpan"></span>
+                  <div id="priceImpactField">
+                    <span>Price Impact: </span><span id="priceImpactSpan"></span
+                    ><span>%</span>
+                  </div>
+                  <div id="minimumReceivedField">
+                    <span>Minimum Received: </span
+                    ><span id="minimumReceivedSpan"></span>
+                  </div>
+                  <div id="platformFeeField">
+                    <span>Platform Fee: </span><span id="platformFeeSpan"></span
+                    ><span>%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="section-container" style="align-items: center">
+          <h2 class="section-title">CA</h2>
+          <p class="section-text">
+            MsJ4LgKfEma1Z6HfBLr7fhD44babkt8ux8sm534pump
+          </p>
+          <button class="button section-button" style="width: 150px">
+            <a href="https://pump.fun/MsJ4LgKfEma1Z6HfBLr7fhD44babkt8ux8sm534pump" class="button-link"
+              >Chart</a
+            >
+          </button>
+        </section>
+      </main>
+      <footer>
+        <p class="footer-text">
+          SolScape is a memecoin made 4 fun and should be treated as such.
+          Don't be autists!
+        </p>
+      </footer>
+    </div>
+
+    <div id="modal-1" class="jw-modal">
+      <div class="jw-modal-body">
+        <h1 id="modal-title">FAQ</h1>
+        <br />
+        <br />
+        <div class="Q_A" id="Q_A_1">
+          <h2 class="modal-question">
+            <u>I created a duel but I can't start it, why?</u>
+          </h2>
+          <br />
+          <img class="modal-answer" src="img/stage-1.png" />
+          <img class="modal-answer" src="img/stage-2.png" />
+          <img class="modal-answer" src="img/stage-3.png" />
+        </div>
+        <br />
+        <br />
+        <div class="Q_A" id="Q_A_2">
+          <h2 class="modal-question">
+            <u>I just created a duel and I can already start it, why?</u>
+          </h2>
+          <br />
+          <img class="modal-answer" src="img/stage-4.png" />
+          <img class="modal-answer" src="img/stage-5.png" />
+        </div>
+        <br />
+        <br />
+        <div class="Q_A" id="Q_A_3">
+          <h2 class="modal-question"><u>Who me, Who opponent?</u></h2>
+          <br />
+          <img class="modal-answer" src="img/YOU-OPP.png" />
+        </div>
+        <br />
+        <br />
+        <div class="Q_A" id="Q_A_4">
+          <h2 class="modal-question">
+            <u>Can't cancel, why?</u>
+          </h2>
+          <br />
+          <p class="modal-answer">
+            You've either created a private duel or there is someone who
+            accepted your duel already. Either way, contact us if you really
+            don't want to play the duel anymore.
+          </p>
+        </div>
+        <br />
+        <br />
+        <div class="Q_A" id="Q_A_5">
+          <h2 class="modal-question">
+            <u>My character is not attacking, why?</u>
+          </h2>
+          <br />
+          <img class="modal-answer" src="img/surprised-pikachu.png" />
+        </div>
+        <br />
+        <br />
+        <button
+          onclick="closeModal()"
+          id="closeModal"
+          class="button section-button"
+        >
+          <span class="close-span"> Close </span>
+        </button>
+      </div>
+    </div>
+    <script src="unpkg.com/%40solana/web3.js%401.95.3/lib/index.iife.min.html"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.html"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/js/select2.min.html"></script>
+    <script src="script.js" type="module" defer></script>
+    <script src="modal.js"></script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8ba89cc78944c9cc',t:'MTcyNDg5MzMxMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='cdn-cgi/challenge-platform/h/b/scripts/jsd/6790c32b9fc9/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>

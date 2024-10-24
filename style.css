@@ -1,0 +1,190 @@
+:root {
+  --content-width: 1400px; /* Desired content width */
+  --dark-red: rgb(173, 14, 8);
+  --dark-yellow: rgb(253, 202, 0);
+  --light-grey: rgb(212, 201, 189);
+  --light-blue: rgb(176, 215, 247);
+}
+
+body {
+  background-color: rgb(36, 36, 36);
+  position: relative;
+}
+
+#container,
+header,
+main,
+footer,
+#body-bg {
+  margin: 0 auto;
+}
+
+#navbar-bg {
+  width: 100%;
+  top: 0;
+}
+
+#body-bg {
+  z-index: -1;
+  position: absolute;
+  width: var(--content-width);
+  left: calc((100vw - var(--content-width)) / 2);
+  right: calc((100vw - var(--content-width)) / 2);
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+
+#container {
+  width: 100vw;
+  max-width: 1000px;
+  background: url("img/maincontainer.png") repeat;
+  background-size: var(--display-width) auto;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: relative;
+  width: 95%;
+}
+
+nav {
+  position: absolute;
+  height: 25%;
+  width: 100%;
+  bottom: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+button {
+  font-size: calc(min(2.5vw, 24px));
+  background: url("img/button.png") no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  font-weight: bold;
+}
+
+a:hover,
+.button-link:hover {
+  color: var(--light-blue);
+}
+
+a:active:focus,
+.button-link:active:focus {
+  padding-top: 0.5em;
+  padding-left: 0.1em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.button-link,
+.section-text,
+.section-title {
+  font-family: "Almendra", serif;
+}
+
+.nav-button {
+  width: 13%;
+  height: 100%;
+}
+
+.nav-button:first-child {
+  margin-left: 2.7%;
+}
+
+.nav-button:last-child {
+  margin-right: 2.3%;
+}
+
+.button-red {
+  color: var(--dark-red);
+}
+
+.button-red:hover {
+  color: red;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+}
+
+.section-container {
+  background: url("img/widecontainer.png") no-repeat;
+  background-size: 100% 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--dark-yellow);
+  margin-top: 40px;
+}
+
+.section-text {
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--light-grey);
+}
+
+.section-double {
+  display: flex;
+}
+
+.section-button {
+  padding: 30px;
+}
+
+.section-container-square {
+  background: url("img/widecontainer.png") no-repeat;
+  background-size: 100% 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 70px 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+footer {
+  width: 100%;
+}
+
+.footer-text {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* CSS rules specific to mobile devices */
+  .section-double {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  /* Add more CSS rules for specific mobile styling as needed */
+}
